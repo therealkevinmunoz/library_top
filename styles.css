@@ -10,7 +10,8 @@
 }
 
 body, 
-button {
+button,
+input {
     margin: 0;
     font-family: var(--font);
 }
@@ -25,6 +26,7 @@ body {
 header {
     background-color: #fff;
     padding: 10px;
+    padding-left: 40px;
     box-shadow: 0 5px 5px var(--color-light-gray);
 }
 
@@ -37,16 +39,17 @@ header {
 #form-submit-button {
     height: 50%;
     padding: 10px 50px;
-    background-color: var(--color-light-blue);
+    background-color: var(--color-dark-gray);
+    color: #fff;
     border: none;
     border-radius: 5px;
-    font-weight: var(--font-thick);
+    font-weight: var(--font-normal);
     font-size: 18px;
 }
 
 #cta-button:hover,
 #form-submit-button:hover{
-    box-shadow: 0 0 10px var(--color-light-gray);
+    box-shadow: 0 0 10px var(--color-medium-gray);
     cursor: pointer;
 }
 
@@ -69,6 +72,7 @@ main button {
     width: 300px;
     border-radius: 5px;
     box-shadow: 0 0 10px var(--color-light-gray);
+    background-color: #fff;
 }
 
 .toggle {
@@ -93,7 +97,7 @@ main button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: green;
+    background-color: #00c853;
 }
 
 .toggle-control::after{
@@ -110,7 +114,7 @@ main button {
 .cta-secondary {
     padding: 0;
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
     background-color: transparent;
     border: none;
     text-decoration: underline;
