@@ -143,8 +143,6 @@ function changeToggleFunctionality()
                 e.target.classList.add('read-false');
 
                 BOOKS[e.target.closest('.card-container').getAttribute('data-index-number')].isRead = false;
-
-                console.log(BOOKS[e.target.closest('.card-container').getAttribute('data-index-number')]);
             }
             else if(e.target.classList.contains('read-false'))
             {
@@ -152,11 +150,10 @@ function changeToggleFunctionality()
                 e.target.classList.add('read-true');
 
                 BOOKS[e.target.closest('.card-container').getAttribute('data-index-number')].isRead = true;
-
-                console.log(BOOKS[e.target.closest('.card-container').getAttribute('data-index-number')]);
             }
+
+            console.log(BOOKS[e.target.closest('.card-container').getAttribute('data-index-number')]);
         })
     }
-
     
 }
